@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-top: 20px;
+  }
+  
+  /* Layout and Container Styles */
+  .App {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 15px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab7;
+  }
+  
+  button:disabled {
+    background-color: #c5c5c5;
+    cursor: not-allowed;
+  }
+  
+  /* Event List Styles */
+  .event-item {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .event-item p {
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .event-item button {
+    margin-right: 10px;
+  }
+  
+  /* Filter Section Styles */
+  .filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-container input[type="date"] {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .filter-container button {
+    padding: 10px 15px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust form layout for smaller screens */
+    .filter-container {
+      flex-direction: column;
+    }
+  
+    .filter-container input[type="date"],
+    .filter-container button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    form {
+      padding: 15px;
+      grid-gap: 10px;
+    }
+  }
+  
